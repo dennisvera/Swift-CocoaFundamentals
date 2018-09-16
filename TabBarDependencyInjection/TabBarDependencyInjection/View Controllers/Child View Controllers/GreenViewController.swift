@@ -36,7 +36,12 @@ class GreenViewController: UIViewController {
         
         // Configure Title Label
         titleLabel.text = viewModel.title
+        titleLabel.font = UIFont (name: "HelveticaNeue-Bold", size: 40)
+        titleLabel.textColor = .white
+        
+        // Configure View Background Color
+        view.backgroundColor = viewModel.color
     }
     
-
+    
 }

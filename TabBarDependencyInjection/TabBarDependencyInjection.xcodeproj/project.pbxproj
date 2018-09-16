@@ -16,8 +16,8 @@
 		E142737A214EF3170008CC92 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1427379214EF3170008CC92 /* BlueViewController.swift */; };
 		E142737C214EF3210008CC92 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142737B214EF3210008CC92 /* GreenViewController.swift */; };
 		E142737E214EFB960008CC92 /* Blue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E142737D214EFB960008CC92 /* Blue.storyboard */; };
-		E1427381214EFD730008CC92 /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1427380214EFD730008CC92 /* ApplicationManager.swift */; };
 		E1427384214EFE630008CC92 /* GreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1427383214EFE630008CC92 /* GreenViewModel.swift */; };
+		E1427386214F0A0A0008CC92 /* BlueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1427385214F0A0A0008CC92 /* BlueViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		E1427379214EF3170008CC92 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		E142737B214EF3210008CC92 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		E142737D214EFB960008CC92 /* Blue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Blue.storyboard; sourceTree = "<group>"; };
-		E1427380214EFD730008CC92 /* ApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
 		E1427383214EFE630008CC92 /* GreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewModel.swift; sourceTree = "<group>"; };
+		E1427385214F0A0A0008CC92 /* BlueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,6 @@
 				E142736F214EF11C0008CC92 /* Appllication Delegate */,
 				E1427373214EF1A70008CC92 /* View Controllers */,
 				E1427372214EF1980008CC92 /* Storyboards */,
-				E142737F214EFD590008CC92 /* Managers */,
 				E1427370214EF14E0008CC92 /* Resources */,
 				E1427371214EF17A0008CC92 /* Supporting Files */,
 			);
@@ -123,25 +122,18 @@
 			isa = PBXGroup;
 			children = (
 				E1427377214EF3060008CC92 /* RedViewController.swift */,
-				E1427379214EF3170008CC92 /* BlueViewController.swift */,
 				E142737B214EF3210008CC92 /* GreenViewController.swift */,
+				E1427379214EF3170008CC92 /* BlueViewController.swift */,
 				E1427382214EFE4C0008CC92 /* View Models */,
 			);
 			path = "Child View Controllers";
-			sourceTree = "<group>";
-		};
-		E142737F214EFD590008CC92 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				E1427380214EFD730008CC92 /* ApplicationManager.swift */,
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 		E1427382214EFE4C0008CC92 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
 				E1427383214EFE630008CC92 /* GreenViewModel.swift */,
+				E1427385214F0A0A0008CC92 /* BlueViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -219,12 +211,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1427384214EFE630008CC92 /* GreenViewModel.swift in Sources */,
-				E1427381214EFD730008CC92 /* ApplicationManager.swift in Sources */,
 				E142735E214EF0640008CC92 /* AppDelegate.swift in Sources */,
 				E1427378214EF3060008CC92 /* RedViewController.swift in Sources */,
 				E142737A214EF3170008CC92 /* BlueViewController.swift in Sources */,
 				E1427375214EF2440008CC92 /* TabBarController.swift in Sources */,
 				E142737C214EF3210008CC92 /* GreenViewController.swift in Sources */,
+				E1427386214F0A0A0008CC92 /* BlueViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

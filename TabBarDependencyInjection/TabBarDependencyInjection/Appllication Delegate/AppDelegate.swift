@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Application Life Cycle
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        guard let rootViewController = window?.rootViewController as? TabBarController else { fatalError("Unexpected Root View Controller") }
+        
+        rootViewController.rootTabBarController = rootViewController
+        
         return true
     }
 

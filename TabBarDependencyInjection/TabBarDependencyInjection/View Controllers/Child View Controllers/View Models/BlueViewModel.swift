@@ -1,5 +1,5 @@
 //
-//  GreenViewModel.swift
+//  BlueCiewModel.swift
 //  TabBarDependencyInjection
 //
 //  Created by Dennis Vera on 9/16/18.
@@ -9,18 +9,17 @@
 import Foundation
 import UIKit
 
-struct GreenViewModel {
+struct BlueViewModel {
     
     // MARK: - Properties
     
     var title: String {
         
-        return "Green"
+        return "Blue"
     }
     
     var color: UIColor {
         
-        return .green
+        return .blue
     }
-    
 }

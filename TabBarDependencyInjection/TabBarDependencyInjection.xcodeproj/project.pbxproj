@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		E142735E214EF0640008CC92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142735D214EF0640008CC92 /* AppDelegate.swift */; };
-		E1427360214EF0640008CC92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142735F214EF0640008CC92 /* ViewController.swift */; };
 		E1427363214EF0640008CC92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1427361214EF0640008CC92 /* Main.storyboard */; };
 		E1427365214EF06B0008CC92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1427364214EF06B0008CC92 /* Assets.xcassets */; };
 		E1427368214EF06B0008CC92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1427366214EF06B0008CC92 /* LaunchScreen.storyboard */; };
+		E1427375214EF2440008CC92 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1427374214EF2440008CC92 /* TabBarController.swift */; };
+		E1427378214EF3060008CC92 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1427377214EF3060008CC92 /* RedViewController.swift */; };
+		E142737A214EF3170008CC92 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1427379214EF3170008CC92 /* BlueViewController.swift */; };
+		E142737C214EF3210008CC92 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142737B214EF3210008CC92 /* GreenViewController.swift */; };
+		E142737E214EFB960008CC92 /* Blue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E142737D214EFB960008CC92 /* Blue.storyboard */; };
+		E1427381214EFD730008CC92 /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1427380214EFD730008CC92 /* ApplicationManager.swift */; };
+		E1427384214EFE630008CC92 /* GreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1427383214EFE630008CC92 /* GreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E142735A214EF0640008CC92 /* TabBarDependencyInjection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarDependencyInjection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E142735D214EF0640008CC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E142735F214EF0640008CC92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1427362214EF0640008CC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1427364214EF06B0008CC92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1427367214EF06B0008CC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1427369214EF06B0008CC92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1427374214EF2440008CC92 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E1427377214EF3060008CC92 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		E1427379214EF3170008CC92 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		E142737B214EF3210008CC92 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		E142737D214EFB960008CC92 /* Blue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Blue.storyboard; sourceTree = "<group>"; };
+		E1427380214EFD730008CC92 /* ApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
+		E1427383214EFE630008CC92 /* GreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,84 @@
 		E142735C214EF0640008CC92 /* TabBarDependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
-				E142735D214EF0640008CC92 /* AppDelegate.swift */,
-				E142735F214EF0640008CC92 /* ViewController.swift */,
-				E1427361214EF0640008CC92 /* Main.storyboard */,
-				E1427364214EF06B0008CC92 /* Assets.xcassets */,
-				E1427366214EF06B0008CC92 /* LaunchScreen.storyboard */,
-				E1427369214EF06B0008CC92 /* Info.plist */,
+				E142736F214EF11C0008CC92 /* Appllication Delegate */,
+				E1427373214EF1A70008CC92 /* View Controllers */,
+				E1427372214EF1980008CC92 /* Storyboards */,
+				E142737F214EFD590008CC92 /* Managers */,
+				E1427370214EF14E0008CC92 /* Resources */,
+				E1427371214EF17A0008CC92 /* Supporting Files */,
 			);
 			path = TabBarDependencyInjection;
+			sourceTree = "<group>";
+		};
+		E142736F214EF11C0008CC92 /* Appllication Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E142735D214EF0640008CC92 /* AppDelegate.swift */,
+			);
+			path = "Appllication Delegate";
+			sourceTree = "<group>";
+		};
+		E1427370214EF14E0008CC92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1427364214EF06B0008CC92 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E1427371214EF17A0008CC92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1427369214EF06B0008CC92 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1427372214EF1980008CC92 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E1427361214EF0640008CC92 /* Main.storyboard */,
+				E142737D214EFB960008CC92 /* Blue.storyboard */,
+				E1427366214EF06B0008CC92 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E1427373214EF1A70008CC92 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1427374214EF2440008CC92 /* TabBarController.swift */,
+				E1427376214EF2D40008CC92 /* Child View Controllers */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E1427376214EF2D40008CC92 /* Child View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1427377214EF3060008CC92 /* RedViewController.swift */,
+				E1427379214EF3170008CC92 /* BlueViewController.swift */,
+				E142737B214EF3210008CC92 /* GreenViewController.swift */,
+				E1427382214EFE4C0008CC92 /* View Models */,
+			);
+			path = "Child View Controllers";
+			sourceTree = "<group>";
+		};
+		E142737F214EFD590008CC92 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E1427380214EFD730008CC92 /* ApplicationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E1427382214EFE4C0008CC92 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1427383214EFE630008CC92 /* GreenViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +206,7 @@
 			files = (
 				E1427368214EF06B0008CC92 /* LaunchScreen.storyboard in Resources */,
 				E1427365214EF06B0008CC92 /* Assets.xcassets in Resources */,
+				E142737E214EFB960008CC92 /* Blue.storyboard in Resources */,
 				E1427363214EF0640008CC92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1427360214EF0640008CC92 /* ViewController.swift in Sources */,
+				E1427384214EFE630008CC92 /* GreenViewModel.swift in Sources */,
+				E1427381214EFD730008CC92 /* ApplicationManager.swift in Sources */,
 				E142735E214EF0640008CC92 /* AppDelegate.swift in Sources */,
+				E1427378214EF3060008CC92 /* RedViewController.swift in Sources */,
+				E142737A214EF3170008CC92 /* BlueViewController.swift in Sources */,
+				E1427375214EF2440008CC92 /* TabBarController.swift in Sources */,
+				E142737C214EF3210008CC92 /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K24N6NL7FA;
-				INFOPLIST_FILE = TabBarDependencyInjection/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TabBarDependencyInjection/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +388,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K24N6NL7FA;
-				INFOPLIST_FILE = TabBarDependencyInjection/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TabBarDependencyInjection/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

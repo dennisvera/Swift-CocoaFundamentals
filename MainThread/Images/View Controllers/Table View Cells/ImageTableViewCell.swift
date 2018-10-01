@@ -20,34 +20,47 @@ final class ImageTableViewCell: UITableViewCell {
     
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var thumbnailImageView: UIImageView!
+    @IBOutlet private var activityIndicatorView: UIActivityIndicatorView!
+    
+    // MARK: - Properties
+    
+    private var dataTask: URLSessionDataTask?
     
     // MARK: - Public API
     
-    func configure(with title: String, url: URL?) {
+    func configure(with title: String, url: URL?, session: URLSession) {
         // Configure Title Label
         titleLabel.text = title
         
         print(Date())
         print(Thread.isMainThread)
         
-        // Load Data
         if let url = url {
-            DispatchQueue.global(qos: .background).async {
-                if let data = try? Data(contentsOf: url) {
-                    let image = UIImage(data: data)
-                    
-                    DispatchQueue.main.async {
-                        // Configure Thumbnail Image View
-                        self.thumbnailImageView.image = image
-                    }
+            activityIndicatorView.startAnimating()
+            
+            let dataTask = session.dataTask(with: url) { [weak self] (data, response, error) in
+                guard let data = data else { return }
+                // Initialize Image
+                let image = UIImage(data: data)?.resizedImage(with: CGSize(width: 200.0, height: 200.0))
+                
+                DispatchQueue.main.async {
+                    // Configure Thumbnail Image View
+                    self?.thumbnailImageView.image = image
                 }
             }
+            
+            dataTask.resume()
+            
+            self.dataTask = dataTask
         }
-        
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        
+        dataTask?.cancel()
+        
+        dataTask = nil
         
         // Reset Thumnail Image View
         thumbnailImageView.image = nil
